@@ -2,69 +2,71 @@
 body {
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  border: 0;
+}
+.general {
   padding: 2em 16em 0 16em;
 }
-.column{
-    float: left;
+.column {
+  float: left;
 }
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .logo {
   margin: 0;
   padding: 0;
   float: left;
   width: auto;
+  background-color: white;
 }
 .logo img {
   width: 90px;
   height: 53px;
-  padding: 0 2em;
+  padding: 0 0 0 16em;
 }
 
 #navbar {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  bottom: auto;
+  width: 100%;
 }
 #navbar ul {
-  padding: 0 0 0 2em;
-}
-ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 16em 0 0;
   overflow: hidden;
   background-color: #ffffff;
 }
-li {
+#navbar li {
   float: right;
-  right: 0;
   padding: 0 1em;
 }
-li a {
+#navbar li a {
   display: block;
   padding: 14px 0.5em;
   color: black;
-  background-color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-size: small;
   font-weight: bold;
 }
-li a:hover:not(.active) {
+#navbar li a:hover:not(.active) {
   background-color: #f8eeee;
 }
-.active {
+#navbar .active {
   background-color: #dedede;
 }
 p {
   font-size: small;
 }
 button {
-    border: none;
+  border: none;
   background-color: #fee600;
   text-align: center;
   vertical-align: middle;
@@ -84,55 +86,77 @@ button {
 #texto p {
   display: inline-block;
 }
-h1{
-    font-weight: 900;
-    font-size: 3em;
+h1 {
+  font-weight: 900;
+  font-size: 3em;
 }
-.zonaImagenes div.nav{
-    font-size: larger;
-    float: left;
-}
-.barra{
-
-}
-.filtro{
-    float: right;
-}
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1e1e1e;
-  position: fixed;
-  padding: 0 16em;
-}
-.footer > div {
+/* Zona que muestra imagenes */
+.zonaImagenes div.nav {
+  font-size: larger;
   float: left;
 }
-#izq {
-  width: 40em;
+.nav ul li:hover {
+  background-color: #fee50079;
 }
-#der {
-  width: 40em;
+.nav ul {
+  padding: 0 0 0 2em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.footer p {
+.nav li {
+  float: left;
+  right: 0;
+  padding: 0 1em;
+}
+.nav li a {
+  display: block;
+  padding: 14px 0.5em;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+}
+.nav .active{
+    background-color: #fee600;
+}
+.collage {
+  margin: 0.5em auto;
+  column-count: 3;
+}
+.collage img {
+  max-width: 18em;
+}
+.filtro {
+  float: right;
+}
+/* -----Parte de los partners */
+.partners img{
+    width: 100%;
+}
+/* -------Footer-------- */
+footer {
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 60px 0px;
   color: white;
   text-align: left;
   position: relative;
   top: 1em;
 }
-.footer button {
-  right: 16em;
+#backToTop {
+  float: right;
   padding-top: 0.5em;
   border: none;
   outline: none;
   background-color: #1e1e1e;
   color: white;
   cursor: pointer;
-  position: fixed;
   font-size: medium;
 }
-.footer img {
+footer img {
   float: left;
   padding: 0.5em;
 }

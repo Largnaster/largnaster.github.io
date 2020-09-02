@@ -13,19 +13,20 @@
     <title>Parcial 1</title>
   </head>
   <body>
-    <div id="general">
-      <div id="navbar">
-        <div class="logo">
-          <img src="/images/Logo.png" alt="Logo de la pagina" />
-        </div>
-        <ul>
-          <li><a href="politicas.html">POLITICAS</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="about.html">ACERCA</a></li>
-          <li><a class="active" href="/">TRABAJO</a></li>
-        </ul>
+    <div id="navbar">
+      <div class="logo">
+        <img src="/images/Logo.png" alt="Logo de la pagina" />
       </div>
+      <ul>
+        <li><a href="politicas.html">POLITICAS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="about.html">ACERCA</a></li>
+        <li><a class="active" href="/">TRABAJO</a></li>
+      </ul>
+    </div>
+    <div class="general">
+      <!-- Barra de nav principal -->
       <div id="contenido">
         <div id="inicial">
           <img id="imginit" src="images/Fairy tail logo.jpg" alt="Prueba 1" />
@@ -44,13 +45,14 @@
         <br />
         <h1>WORK SHOWCASE</h1>
         <div class="zonaImagenes">
+          <!-- Barra de nav imagenes -->
           <div class="row">
             <div class="nav">
               <ul>
-                <li>Todos</li>
-                <li>Marca</li>
-                <li>Ilustraciones</li>
-                <li>Web</li>
+                <li><a href="#" class="active">Todos</a></li>
+                <li><a href="#">Marca</a></li>
+                <li><a href="#">Ilustraciones</a></li>
+                <li><a href="#">Web</a></li>
               </ul>
             </div>
             <div class="filtro">
@@ -59,29 +61,52 @@
           </div>
           <br />
           <div class="collage">
+            <!-- Imagen 1 -->
             <article>
-              <a href="" target="_blank">
                 <figure>
-                  <img src="" alt="" /><caption>Aaasaadsadasda</caption>
+                  <img src="/images/alien.png" alt="Alien de Toy Story" />
                 </figure>
-              </a>
+            </article>
+            <!-- Imagen 2 -->
+            <article>
+                <figure>
+                  <img src="/images/andromeda.jpg" alt="Alien de Toy Story" />
+                </figure>
+            </article>
+            <!-- Imagen 3 -->
+            <article>
+                <figure>
+                  <img src="/images/comunismo.jpg" alt="Alien de Toy Story" />
+                </figure>
+            </article>
+            <!-- Imagen 4 -->
+            <article>
+                <figure>
+                  <img src="/images/hipogrifo.jpg" alt="Alien de Toy Story" />
+                </figure>
             </article>
           </div>
           <button>Mostrar más</button>
         </div>
+        <div class="partners">
+          <img src="/images/Partners.png" alt="Nuestros partners">
+        </div>
       </div>
-      <div class="footer">
-        <div id="izq">
+    </div>
+    <br />
+    <footer>
+      <div class="row">
+        <div id="column">
           <img src="/images/LogoBlanco.png" alt="Logo de la pagina" />
           <p>&COPY;2020 - Mint derechos reservados</p>
         </div>
-        <div id="der">
+        <div id="backToTop">
           <button title="Volver al principio" onclick="top()">
             Volver arriba &xwedge;
           </button>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
 <script>
