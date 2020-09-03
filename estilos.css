@@ -10,6 +10,8 @@ body {
 }
 .column {
   float: left;
+  display: block;
+  padding: 10px;
 }
 .row::after {
   content: "";
@@ -74,6 +76,9 @@ button {
   font-weight: bold;
   text-transform: uppercase;
 }
+button:hover{
+  cursor: pointer;
+}
 #imginit {
   float: right;
   width: 200px;
@@ -136,6 +141,73 @@ h1 {
 .partners img{
     width: 100%;
 }
+/* ------Parte del about us------- */
+.about img{
+  max-width: 18em;
+  padding: 0 5em 0 0;
+  vertical-align: middle;
+}
+/* ------Parte del blog------ */
+.blog{
+  height: max-content;
+  columns: 3;
+  height: 100%;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 16em;
+  height: 100%;
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container{
+  padding: 2px 16px;
+}
+/* Zona de ingreso de mensaje */
+input[type=text], input[type=email], textarea{
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  resize: vertical;
+}
+form{
+  width: 18em;
+}
+form label{
+  display: inline-block;
+  padding: 12px 12px 12px 0;
+}
+input[type=submit]{
+  background-color: #fee600;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+input[type=submit]:hover{
+  cursor: pointer;
+}
+.iconos{
+  padding: 1em 0 1em 5em;
+}
+.iconos:not(.info) img{
+  padding: 0 1em;
+}
+.info img{
+  padding: 0 5em;
+}
+.iconos figure{
+  float: left;
+  display: block;
+}
+figcaption{
+  padding: 2px;
+  text-align: center;
+}
 /* -------Footer-------- */
 footer {
   width: 100%;
@@ -148,7 +220,7 @@ footer {
 }
 #backToTop {
   float: right;
-  padding-top: 0.5em;
+  padding: 0 16em 0 0;
   border: none;
   outline: none;
   background-color: #1e1e1e;
@@ -158,5 +230,5 @@ footer {
 }
 footer img {
   float: left;
-  padding: 0.5em;
+  padding: 0.5em 0 0 16em;
 }

@@ -13,6 +13,7 @@
     <title>Parcial 1</title>
   </head>
   <body>
+    <!-- Barra de nav principal -->
     <div id="navbar">
       <div class="logo">
         <img src="/images/Logo.png" alt="Logo de la pagina" />
@@ -26,7 +27,6 @@
       </ul>
     </div>
     <div class="general">
-      <!-- Barra de nav principal -->
       <div id="contenido">
         <div id="inicial">
           <img id="imginit" src="images/Fairy tail logo.jpg" alt="Prueba 1" />
@@ -43,6 +43,7 @@
           </div>
         </div>
         <br />
+        <!-- Zona donde se muestran las imagenes -->
         <h1>WORK SHOWCASE</h1>
         <div class="zonaImagenes">
           <!-- Barra de nav imagenes -->
@@ -63,33 +64,193 @@
           <div class="collage">
             <!-- Imagen 1 -->
             <article>
-                <figure>
-                  <img src="/images/alien.png" alt="Alien de Toy Story" />
-                </figure>
+              <figure>
+                <img src="/images/alien.png" alt="Alien de Toy Story" />
+              </figure>
             </article>
             <!-- Imagen 2 -->
             <article>
-                <figure>
-                  <img src="/images/andromeda.jpg" alt="Alien de Toy Story" />
-                </figure>
+              <figure>
+                <img src="/images/andromeda.jpg" alt="Alien de Toy Story" />
+              </figure>
             </article>
             <!-- Imagen 3 -->
             <article>
-                <figure>
-                  <img src="/images/comunismo.jpg" alt="Alien de Toy Story" />
-                </figure>
+              <figure>
+                <img src="/images/comunismo.jpg" alt="Alien de Toy Story" />
+              </figure>
             </article>
             <!-- Imagen 4 -->
             <article>
-                <figure>
-                  <img src="/images/hipogrifo.jpg" alt="Alien de Toy Story" />
-                </figure>
+              <figure>
+                <img src="/images/hipogrifo.jpg" alt="Alien de Toy Story" />
+              </figure>
             </article>
           </div>
           <button>Mostrar más</button>
         </div>
+        <!-- Imagen con los socios de la pagina -->
         <div class="partners">
-          <img src="/images/Partners.png" alt="Nuestros partners">
+          <img src="/images/Partners.png" alt="Nuestros partners" />
+        </div>
+        <!-- Apartado de nosotros -->
+        <div class="about">
+          <h1>Acerca de nosotros</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sed
+            reiciendis odio cum dolorum totam hic ducimus ab quasi dolore
+            ratione voluptatibus perspiciatis nihil tempora numquam laudantium
+            quas, nulla quaerat?
+          </p>
+          <div class="row">
+            <div class="column" style="max-width: 18em">
+              <img src="/images/nazi.png" alt="Simbolo nazi" />
+            </div>
+            <div class="column">
+              <img src="/images/ophanim.jpg" alt="Un angelito" />
+            </div>
+            <div>
+              <h3>Un poco de nosotros</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+                inventore fugit, sapiente ea sed reprehenderit dolore laborum
+                blanditiis illo assumenda suscipit voluptatum ratione, ad
+                corrupti, rerum ducimus quia voluptate nulla!
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Apartado para las entradas de blog -->
+        <div>
+          <h1>Nuestro Blog</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            cupiditate dignissimos voluptatibus, doloremque expedita quam
+            doloribus accusantium accusamus dolorum atque quisquam delectus
+            voluptatum omnis temporibus optio vel eius aperiam eveniet?
+          </p>
+          <div class="row">
+            <!-- Imagen 1 -->
+            <div class="column">
+              <div class="card">
+                <img
+                  src="/images/putin.jpg"
+                  alt="Putin montando un oso"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h4><b>Lorem Ipsum</b></h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quas ducimus maxime
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="column">
+              <div class="card">
+                <img
+                  src="/images/gallo.jpg"
+                  alt="Putin montando un oso"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h4><b>Lorem Ipsum</b></h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quas ducimus maxime
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="column">
+              <div class="card">
+                <img
+                  src="/images/sol.jpg"
+                  alt="Putin montando un oso"
+                  style="width: 100%"
+                />
+                <div class="container">
+                  <h4><b>Lorem Ipsum</b></h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quas ducimus maxime
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado para los contactos -->
+        <div>
+          <h1>Contáctenos</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            optio deserunt rerum ipsa. Cum ab inventore eligendi officia,
+            perspiciatis nostrum quaerat quidem. Debitis dolorum similique
+            explicabo consequatur odio, sint voluptas.
+          </p>
+          <!-- Parte del formulario -->
+          <div class="row">
+            <div class="column">
+              <h2>Mándenos un mensaje</h2>
+              <form action="enviar()">
+                <label for="name">Nombre</label>
+                <input
+                  id="name"
+                  name="nombre"
+                  type="text"
+                  placeholder="Nombre"
+                />
+                <label for="email">Correo</label>
+                <input
+                  id="email"
+                  name="correo"
+                  type="email"
+                  placeholder="Correo electronico"
+                />
+                <label for="message">Mensaje</label>
+                <textarea
+                  name="Mensaje"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Ingrese mensaje"
+                ></textarea>
+                <input type="submit" value="Enviar" />
+              </form>
+            </div>
+            <div class="column" style="float: right; top: 30%;">
+              <img src="/images/oruchuban.jpg" alt="Tomaremos su llamada" />
+            </div>
+          </div>
+          <!-- Parte de los iconos finales -->
+          <div class="row" style="text-align: center">
+            <div class="iconos info">
+              <figure>
+                <img src="/images/pinIco.png" alt="Un pin" />
+                <figcaption>1234 Algo Genial<br>YorkNew</figcaption>
+              </figure>
+              <figure>
+                <img src="/images/phoneIco.png" alt="Un celuco" />
+                <figcaption>+00 123-456-78<br>+01 123-456-78</figcaption>
+              </figure>
+              <figure>
+                <img src="/images/mailIco.png" alt="Un mail o algo" />
+                <figcaption>mail@mail.com</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row" style="text-align: center">
+            <div class="iconos">
+              <img src="/images/facebookIco.png" alt="El ico de face" />
+              <img src="/images/twitterIco.png" alt="El ico de twitter" />
+              <img src="/images/webIco.png" alt="Ico de algo web" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -113,5 +274,8 @@
   function top() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  }
+  function enviar() {
+    alert("Mensaje enviado");
   }
 </script>
