@@ -12,6 +12,10 @@ body {
   float: left;
   display: block;
   padding: 10px;
+  margin: 0;
+}
+.column img{
+  padding: 1em 0;
 }
 .row::after {
   content: "";
@@ -23,11 +27,12 @@ body {
   padding: 0;
   float: left;
   width: auto;
+  height: 100%;
   background-color: white;
 }
 .logo img {
-  width: 90px;
-  height: 53px;
+  width: auto;
+  height: 2.5em;
   padding: 0 0 0 16em;
 }
 
@@ -81,8 +86,8 @@ button:hover{
 }
 #imginit {
   float: right;
-  width: 200px;
-  height: 200px;
+  width: 40%;
+  height: auto;
   vertical-align: middle;
 }
 #texto {
@@ -128,11 +133,17 @@ h1 {
     background-color: #fee600;
 }
 .collage {
-  margin: 0.5em auto;
   column-count: 3;
 }
 .collage img {
-  max-width: 18em;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5% 0;
+}
+.collage img:hover{
+  cursor: pointer;
+  content: attr("Hola");
 }
 .filtro {
   float: right;
@@ -191,11 +202,17 @@ input[type=submit]{
 input[type=submit]:hover{
   cursor: pointer;
 }
+.contact{
+  vertical-align: middle;
+  right: 0;
+  padding: 10% 0;
+  height: auto;
+}
 .iconos{
-  padding: 1em 0 1em 5em;
+  padding: 1vh 0 1vh 5vh;
 }
 .iconos:not(.info) img{
-  padding: 0 1em;
+  padding: 0 1vh;
 }
 .info img{
   padding: 0 5em;

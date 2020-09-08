@@ -28,9 +28,9 @@
     </div>
     <div class="general">
       <div id="contenido">
-        <div id="inicial">
-          <img id="imginit" src="images/Fairy tail logo.jpg" alt="Prueba 1" />
-          <div>
+        <!-- Contenido en la parte superior -->
+        <div class="row" id="inicial">
+          <div class="column" style="width: 50%;">
             <h1>Hello!!!<br />We are Creative Digital Agency</h1>
             <br />
             <p>
@@ -41,6 +41,7 @@
             </p>
             <button>Mensaje</button>
           </div>
+          <img id="imginit" src="images/Edificio.jpg" alt="Edificio" />
         </div>
         <br />
         <!-- Zona donde se muestran las imagenes -->
@@ -61,30 +62,31 @@
             </div>
           </div>
           <br />
+          <!-- Imágenes del collage -->
           <div class="collage">
             <!-- Imagen 1 -->
             <article>
-              <figure>
-                <img src="/images/alien.png" alt="Alien de Toy Story" />
-              </figure>
+              <img src="/images/Bolso.jpg" alt="Bolso bonito" />
             </article>
             <!-- Imagen 2 -->
             <article>
-              <figure>
-                <img src="/images/andromeda.jpg" alt="Alien de Toy Story" />
-              </figure>
+              <img src="/images/Lampara.jpg" alt="Lámpara barata" />
             </article>
             <!-- Imagen 3 -->
             <article>
-              <figure>
-                <img src="/images/comunismo.jpg" alt="Alien de Toy Story" />
-              </figure>
+              <img src="/images/Reloj.jpg" alt="Reloj de pared de péndulo" />
             </article>
             <!-- Imagen 4 -->
             <article>
-              <figure>
-                <img src="/images/hipogrifo.jpg" alt="Alien de Toy Story" />
-              </figure>
+              <img src="/images/Tazon.jpg" alt="Tazón minimalista" />
+            </article>
+            <!-- Imagen 5 -->
+            <article>
+              <img src="/images/Vino.jpg" alt="Un vino muy bueno" />
+            </article>
+            <!-- Imagen 6 -->
+            <article>
+              <img src="/images/Zapato.jpg" alt="Mocasines muy tremendos" />
             </article>
           </div>
           <button>Mostrar más</button>
@@ -104,10 +106,10 @@
           </p>
           <div class="row">
             <div class="column" style="max-width: 18em">
-              <img src="/images/nazi.png" alt="Simbolo nazi" />
+              <img src="/images/Persona1.jpg" alt="Persona fondo negro" />
             </div>
             <div class="column">
-              <img src="/images/ophanim.jpg" alt="Un angelito" />
+              <img src="/images/Persona2.jpg" alt="Otra persona con fondo negro" />
             </div>
             <div>
               <h3>Un poco de nosotros</h3>
@@ -135,12 +137,12 @@
             <div class="column">
               <div class="card">
                 <img
-                  src="/images/putin.jpg"
+                  src="/images/Muebles1.jpg"
                   alt="Putin montando un oso"
-                  style="width: 100%"
+                  style="width: 100%; padding: 0;"
                 />
                 <div class="container">
-                  <h4><b>Lorem Ipsum</b></h4>
+                  <h4><b>Super Blog Article</b></h4>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quas ducimus maxime
@@ -152,12 +154,12 @@
             <div class="column">
               <div class="card">
                 <img
-                  src="/images/gallo.jpg"
+                  src="/images/Muebles2.jpg"
                   alt="Putin montando un oso"
-                  style="width: 100%"
+                  style="width: 100%; padding: 0;"
                 />
                 <div class="container">
-                  <h4><b>Lorem Ipsum</b></h4>
+                  <h4><b>Super Blog Article</b></h4>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quas ducimus maxime
@@ -169,12 +171,12 @@
             <div class="column">
               <div class="card">
                 <img
-                  src="/images/sol.jpg"
+                  src="/images/Muebles3.jpg"
                   alt="Putin montando un oso"
-                  style="width: 100%"
+                  style="width: 100%; padding: 0;"
                 />
                 <div class="container">
-                  <h4><b>Lorem Ipsum</b></h4>
+                  <h4><b>Super Blog Article</b></h4>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quas ducimus maxime
@@ -188,14 +190,15 @@
         <div>
           <h1>Contáctenos</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            optio deserunt rerum ipsa. Cum ab inventore eligendi officia,
-            perspiciatis nostrum quaerat quidem. Debitis dolorum similique
-            explicabo consequatur odio, sint voluptas.
+            Imaginemos que estamos en la tercera guerra mundial y tienes información que le dará la victoria a
+            alguno de los dos bandos en guerra. Ahora uno de esos bandos tiene cautivos a todos los que amas y
+            alguna vez amaste, amenazados de muerte si no entregas la información, pero es el bando que mayor 
+            daño le hará a la humanidad si gana; por el otro lado no tienes certeza de el otro bando tenga mejores
+            intenciones.
           </p>
           <!-- Parte del formulario -->
           <div class="row">
-            <div class="column">
+            <div class="column" style="width: 35%;">
               <h2>Mándenos un mensaje</h2>
               <form action="enviar()">
                 <label for="name">Nombre</label>
@@ -223,20 +226,24 @@
                 <input type="submit" value="Enviar" />
               </form>
             </div>
-            <div class="column" style="float: right; top: 30%;">
-              <img src="/images/oruchuban.jpg" alt="Tomaremos su llamada" />
-            </div>
+            <article class="contact">
+              <img
+                src="/images/EdificioModerno.jpg"
+                alt="Tomaremos su llamada"
+                style="float: right; width: 59%;"
+              />
+            </article>
           </div>
           <!-- Parte de los iconos finales -->
           <div class="row" style="text-align: center">
             <div class="iconos info">
               <figure>
                 <img src="/images/pinIco.png" alt="Un pin" />
-                <figcaption>1234 Algo Genial<br>YorkNew</figcaption>
+                <figcaption>1234 Algo Genial<br />YorkNew</figcaption>
               </figure>
               <figure>
                 <img src="/images/phoneIco.png" alt="Un celuco" />
-                <figcaption>+00 123-456-78<br>+01 123-456-78</figcaption>
+                <figcaption>+00 123-456-78<br />+01 123-456-78</figcaption>
               </figure>
               <figure>
                 <img src="/images/mailIco.png" alt="Un mail o algo" />
