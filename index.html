@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" type="text/css" href="estilos.css" />
 
+    <script type="text/javascript" src="/scripts.js"></script>
+
     <title>Parcial 1</title>
   </head>
   <body>
@@ -18,19 +20,18 @@
       <div class="logo">
         <img src="/images/Logo.png" alt="Logo de la pagina" />
       </div>
-      <ul>
-        <li><a href="politicas.html">POLITICAS</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="about.html">ACERCA</a></li>
-        <li><a class="active" href="/">TRABAJO</a></li>
+      <ul id="myNav">
+        <li><a class="link" href="index.html#contactUs">CONTACT</a></li>
+        <li><a class="link" href="index.html#ourBlog">BLOG</a></li>
+        <li><a class="link" href="index.html#aboutUs">ABOUT</a></li>
+        <li><a class="link active" href="index.html#workShowcase">WORK</a></li>
       </ul>
     </div>
     <div class="general">
       <div id="contenido">
         <!-- Contenido en la parte superior -->
         <div class="row" id="inicial">
-          <div class="column" style="width: 50%;">
+          <div class="column" style="width: 50%">
             <h1>Hello!!!<br />We are Creative Digital Agency</h1>
             <br />
             <p>
@@ -39,65 +40,78 @@
               ea, laboriosam beatae asperiores doloremque nemo culpa maxime
               exercitationem sequi sit quas omnis.
             </p>
-            <button>Mensaje</button>
+            <button onclick="enviar()">Send Message</button>
           </div>
           <img id="imginit" src="images/Edificio.jpg" alt="Edificio" />
         </div>
         <br />
         <!-- Zona donde se muestran las imagenes -->
-        <h1>WORK SHOWCASE</h1>
-        <div class="zonaImagenes">
-          <!-- Barra de nav imagenes -->
-          <div class="row">
-            <div class="nav">
-              <ul>
-                <li><a href="#" class="active">Todos</a></li>
-                <li><a href="#">Marca</a></li>
-                <li><a href="#">Ilustraciones</a></li>
-                <li><a href="#">Web</a></li>
-              </ul>
+        <div id="workShowcase">
+          <h1>WORK SHOWCASE</h1>
+          <div class="zonaImagenes">
+            <!-- Barra de nav imagenes -->
+            <div class="row">
+              <div class="nav">
+                <ul>
+                  <li><a href="#" class="active">ALL</a></li>
+                  <li><a href="#">BRANDING</a></li>
+                  <li><a href="#">ILLUSTRATION</a></li>
+                  <li><a href="#">WEB</a></li>
+                </ul>
+              </div>
+              <div class="filtro">
+                <label for="">NEWEST FIRST</label>
+              </div>
             </div>
-            <div class="filtro">
-              <label for="">Nuevo primero</label>
+            <br />
+            <!-- Imágenes del collage -->
+            <div class="collage">
+              <!-- Imagen 1 -->
+              <article class="collage-container">
+                <img
+                  class="collage-image"
+                  src="/images/Bolso.jpg"
+                  alt="Bolso bonito"
+                />
+                <div class="overlay">
+                  <div class="text-overlay">
+                    <h3>Artwork</h3>
+                    <br />
+                    <p>BRANDING</p>
+                  </div>
+                </div>
+              </article>
+              <!-- Imagen 2 -->
+              <article>
+                <img src="/images/Lampara.jpg" alt="Lámpara barata" />
+              </article>
+              <!-- Imagen 3 -->
+              <article>
+                <img src="/images/Reloj.jpg" alt="Reloj de pared de péndulo" />
+              </article>
+              <!-- Imagen 4 -->
+              <article>
+                <img src="/images/Tazon.jpg" alt="Tazón minimalista" />
+              </article>
+              <!-- Imagen 5 -->
+              <article>
+                <img src="/images/Vino.jpg" alt="Un vino muy bueno" />
+              </article>
+              <!-- Imagen 6 -->
+              <article>
+                <img src="/images/Zapato.jpg" alt="Mocasines muy tremendos" />
+              </article>
             </div>
+            <button style="margin-left: 43%">Show me more</button>
           </div>
-          <br />
-          <!-- Imágenes del collage -->
-          <div class="collage">
-            <!-- Imagen 1 -->
-            <article>
-              <img src="/images/Bolso.jpg" alt="Bolso bonito" />
-            </article>
-            <!-- Imagen 2 -->
-            <article>
-              <img src="/images/Lampara.jpg" alt="Lámpara barata" />
-            </article>
-            <!-- Imagen 3 -->
-            <article>
-              <img src="/images/Reloj.jpg" alt="Reloj de pared de péndulo" />
-            </article>
-            <!-- Imagen 4 -->
-            <article>
-              <img src="/images/Tazon.jpg" alt="Tazón minimalista" />
-            </article>
-            <!-- Imagen 5 -->
-            <article>
-              <img src="/images/Vino.jpg" alt="Un vino muy bueno" />
-            </article>
-            <!-- Imagen 6 -->
-            <article>
-              <img src="/images/Zapato.jpg" alt="Mocasines muy tremendos" />
-            </article>
-          </div>
-          <button>Mostrar más</button>
         </div>
         <!-- Imagen con los socios de la pagina -->
         <div class="partners">
           <img src="/images/Partners.png" alt="Nuestros partners" />
         </div>
-        <!-- Apartado de nosotros -->
-        <div class="about">
-          <h1>Acerca de nosotros</h1>
+        <!-- Apartado de About us -->
+        <div class="about" id="aboutUs">
+          <h1>ABOUT US</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sed
             reiciendis odio cum dolorum totam hic ducimus ab quasi dolore
@@ -109,23 +123,29 @@
               <img src="/images/Persona1.jpg" alt="Persona fondo negro" />
             </div>
             <div class="column">
-              <img src="/images/Persona2.jpg" alt="Otra persona con fondo negro" />
+              <img
+                src="/images/Persona2.jpg"
+                alt="Otra persona con fondo negro"
+              />
             </div>
-            <div>
-              <h3>Un poco de nosotros</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-                inventore fugit, sapiente ea sed reprehenderit dolore laborum
-                blanditiis illo assumenda suscipit voluptatum ratione, ad
-                corrupti, rerum ducimus quia voluptate nulla!
-              </p>
+            <div class="collage-container">
+              <div class="about-abstract">
+                <h3>LITTLE ABOUT US</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum inventore fugit, sapiente ea sed reprehenderit dolore
+                  laborum blanditiis illo assumenda suscipit voluptatum ratione,
+                  ad corrupti, rerum ducimus quia voluptate nulla!
+                </p>
+                <input type="button" value="Read More" />
+              </div>
             </div>
           </div>
         </div>
         <br />
         <!-- Apartado para las entradas de blog -->
-        <div>
-          <h1>Nuestro Blog</h1>
+        <div id="ourBlog">
+          <h1>OUR BLOG</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             cupiditate dignissimos voluptatibus, doloremque expedita quam
@@ -136,11 +156,18 @@
             <!-- Imagen 1 -->
             <div class="column">
               <div class="card">
-                <img
-                  src="/images/Muebles1.jpg"
-                  alt="Putin montando un oso"
-                  style="width: 100%; padding: 0;"
-                />
+                <div class="collage-container">
+                  <img
+                    src="/images/Muebles1.jpg"
+                    alt="Mueble de sala"
+                    style="width: 100%; padding: 0"
+                  />
+                  <div class="overlay">
+                    <div class="text-overlay">
+                      <h3>Read More</h3>
+                    </div>
+                  </div>
+                </div>
                 <div class="container">
                   <h4><b>Super Blog Article</b></h4>
                   <p>
@@ -155,8 +182,8 @@
               <div class="card">
                 <img
                   src="/images/Muebles2.jpg"
-                  alt="Putin montando un oso"
-                  style="width: 100%; padding: 0;"
+                  alt="Muebles para un comedor"
+                  style="width: 100%; padding: 0"
                 />
                 <div class="container">
                   <h4><b>Super Blog Article</b></h4>
@@ -172,8 +199,8 @@
               <div class="card">
                 <img
                   src="/images/Muebles3.jpg"
-                  alt="Putin montando un oso"
-                  style="width: 100%; padding: 0;"
+                  alt="Muebles para ir a leer"
+                  style="width: 100%; padding: 0"
                 />
                 <div class="container">
                   <h4><b>Super Blog Article</b></h4>
@@ -187,50 +214,44 @@
           </div>
         </div>
         <!-- Apartado para los contactos -->
-        <div>
-          <h1>Contáctenos</h1>
+        <div id="contactUs">
+          <h1>CONTACT US</h1>
           <p>
-            Imaginemos que estamos en la tercera guerra mundial y tienes información que le dará la victoria a
-            alguno de los dos bandos en guerra. Ahora uno de esos bandos tiene cautivos a todos los que amas y
-            alguna vez amaste, amenazados de muerte si no entregas la información, pero es el bando que mayor 
-            daño le hará a la humanidad si gana; por el otro lado no tienes certeza de el otro bando tenga mejores
-            intenciones.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+            architecto voluptatibus quo sint deserunt aut, quam excepturi odit
+            enim recusandae nihil soluta quibusdam non voluptates dolores
+            distinctio totam placeat asperiores!
           </p>
           <!-- Parte del formulario -->
           <div class="row">
-            <div class="column" style="width: 35%;">
-              <h2>Mándenos un mensaje</h2>
+            <div class="column" style="width: 35%">
+              <h2>SEND US MESSAGE</h2>
               <form action="enviar()">
-                <label for="name">Nombre</label>
-                <input
-                  id="name"
-                  name="nombre"
-                  type="text"
-                  placeholder="Nombre"
-                />
-                <label for="email">Correo</label>
+                <label for="name">Name</label>
+                <input id="name" name="nombre" type="text" placeholder="Name" />
+                <label for="email">Email</label>
                 <input
                   id="email"
                   name="correo"
                   type="email"
-                  placeholder="Correo electronico"
+                  placeholder="Email"
                 />
-                <label for="message">Mensaje</label>
+                <label for="message">Message</label>
                 <textarea
                   name="Mensaje"
                   id="message"
                   cols="30"
                   rows="10"
-                  placeholder="Ingrese mensaje"
+                  placeholder="Message"
                 ></textarea>
-                <input type="submit" value="Enviar" />
+                <input type="submit" value="Send Message" />
               </form>
             </div>
             <article class="contact">
               <img
                 src="/images/EdificioModerno.jpg"
                 alt="Tomaremos su llamada"
-                style="float: right; width: 59%;"
+                style="float: right; width: 59%"
               />
             </article>
           </div>
@@ -266,23 +287,17 @@
       <div class="row">
         <div id="column">
           <img src="/images/LogoBlanco.png" alt="Logo de la pagina" />
-          <p>&COPY;2020 - Mint derechos reservados</p>
+          <p>&COPY;2020 - Mint all right reserved</p>
         </div>
         <div id="backToTop">
-          <button title="Volver al principio" onclick="top()">
-            Volver arriba &xwedge;
+          <button
+            title="Back to top"
+            onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"
+          >
+            Back to top &xwedge;
           </button>
         </div>
       </div>
     </footer>
   </body>
 </html>
-<script>
-  function top() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  function enviar() {
-    alert("Mensaje enviado");
-  }
-</script>
